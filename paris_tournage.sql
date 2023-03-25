@@ -1,4 +1,4 @@
-```
+```sql
 #WHAT TYPE OF FILMING IS THERE ?
 SELECT
   DISTINCT Type_de_tournage,
