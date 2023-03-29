@@ -44,3 +44,14 @@ WHERE continent != '0'
 GROUP BY continent
 
 --------------
+#Finding months with the most deaths ranked
+
+SELECT
+  SUM(new_deaths) AS death_sum,
+  FORMAT_DATE('%Y-%m', date) AS year_month  
+FROM `first-data-analytic-project.sql_training.covid`
+GROUP BY year_month
+ORDER BY death_sum DESC
+----------------------
+
+
