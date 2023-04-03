@@ -8,4 +8,14 @@ FROM t_employees e
 GROUP BY gender, years
 ORDER BY years, gender;
 
+# Whats is salary range of the comapnies ?
+SELECT MIN(column_name), MAX(column_name) FROM table_name;
+
+# Whats is salary range of the comapnies ?
+SELECT
+    salary,
+    COUNT(emp_no) num_emp
+FROM t_salaries
+GROUP BY salary
+ORDER BY num_emp DESC;
 
